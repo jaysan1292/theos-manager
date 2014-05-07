@@ -1,0 +1,16 @@
+'menu': [
+	{
+		'label': 'Packages'
+		'submenu': [
+			{
+				'label': 'Theos'
+				'submenu': [
+					{ 'label': 'Build',          'command': 'theos-manager:build' }
+					{ 'label': 'Clean',          'command': 'theos-manager:clean' }
+					{ 'label': 'Run',            'command': 'theos-manager:run' }
+					{ 'label': 'Run Last Build', 'command': 'theos-manager:run_latest' }
+				]
+			}
+		]
+	}
+]
