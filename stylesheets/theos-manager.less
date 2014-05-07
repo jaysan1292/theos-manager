@@ -1,0 +1,71 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "ui-mixins";
+
+.theos-header-view {
+	position: fixed;
+	width: 100%;
+	z-index:10;
+	position:relative;
+
+	.heading-close {
+		color: @text-color-highlight;
+	}
+
+	.heading-title {
+		padding-left: 6px;
+	}
+
+	.heading-status {
+		padding-left: 9px;
+	}
+
+	.icon-alert {
+		color: @text-color-warning;
+	}
+
+	.icon-check {
+		color: @text-color-success;
+	}
+
+	.icon-hourglass {
+		color: @text-color;
+	}
+
+	.icon-stop {
+		color: @text-color-error;
+	}
+}
+
+.theos-output-view {
+	overflow: scroll;
+	height: 300px;
+	margin-bottom: 0px;
+	background: @tool-panel-background-color;
+
+	.panel-body {
+		background: @tool-panel-background-color;
+		pre {
+			background: @tool-panel-background-color;
+			color: @text-color;
+		}
+		.stdout {
+
+		}
+		.stderr {
+			color: @text-color-error;
+		}
+	}
+
+	.output {
+	}
+
+	.line {
+		border-radius: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+}

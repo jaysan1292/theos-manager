@@ -3,17 +3,22 @@
   "main": "./lib/theos-manager",
   "version": "0.2.0",
   "description": "Build, clean, or install Theos projects through Atom",
+  "author": "Jason Recillo <jaysan1292@gmail.com>",
   "activationEvents": [
     "theos-manager:build",
     "theos-manager:clean",
     "theos-manager:cancel",
     "theos-manager:run",
-    "theos-manager:run_latest"
+    "theos-manager:run_latest",
+    "theos-manager:close-view"
   ],
   "repository": "https://github.com/jaysan1292/theos-manager",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ansi-to-html": "*",
+    "underscore-plus": "*"
+  }
 }
