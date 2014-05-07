@@ -1,5 +1,5 @@
 {
-  "name": "Theos-Build-Manager",
+  "name": "theos-build-manager",
   "main": "./lib/theos-manager",
   "version": "0.2.0",
   "description": "Build, clean, or install Theos projects through Atom",
