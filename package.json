@@ -1,20 +1,19 @@
 {
-	"name": "Theos-Build-Manager",
-	"main": "./lib/theos-manager",
-	"version": "0.1.0",
-	"description": "Build, clean, or install Theos projects through Atom",
-	"activationEvents": [
-		"theos-manager:build",
-		"theos-manager:clean",
-		"theos-manager:cancel",
-		"theos-manager:run",
-		"theos-manager:run_latest"
-	],
-	"repository": "https://github.com/jaysan1292/theos-manager",
-	"license": "MIT",
-	"engines": {
-		"atom": ">0.50.0"
-	},
-	"dependencies": {
-	}
+  "name": "Theos-Build-Manager",
+  "main": "./lib/theos-manager",
+  "version": "0.2.0",
+  "description": "Build, clean, or install Theos projects through Atom",
+  "activationEvents": [
+    "theos-manager:build",
+    "theos-manager:clean",
+    "theos-manager:cancel",
+    "theos-manager:run",
+    "theos-manager:run_latest"
+  ],
+  "repository": "https://github.com/jaysan1292/theos-manager",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
 }
