@@ -1,4 +1,4 @@
-# Atom Theos Build Manager
+# Theos Build Manager
 
 Build your Theos projects through Atom.
 
@@ -8,6 +8,16 @@ functioning if Atom Theos Build Manager is to work properly.
 
 After installing, please make sure to go into Settings to set `THEOS_DEVICE_IP`
 and `THEOS_DEVICE_PORT`.
+
+## Installing
+
+Using `apm`:
+```
+$ apm install Theos-Build-Manager
+```
+
+Or, search for "Theos Build Manager" in the Packages section in Atom's Settings,
+and click Install.
 
 ## Default keybindings
 
