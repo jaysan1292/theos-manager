@@ -1,7 +1,7 @@
 {
   "name": "theos-build-manager",
   "main": "./lib/theos-manager",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Build, clean, or install Theos projects through Atom",
   "author": "Jason Recillo <jaysan1292@gmail.com>",
   "activationEvents": [
