@@ -9,6 +9,6 @@
 # https://atom.io/docs/latest/advanced/keymaps
 '.editor':
   'cmd-alt-shift-b': 'theos-manager:run'
-  'cmd-alt-shift-c': 'theos-manager:cancel'
+  'cmd-alt-c':       'theos-manager:cancel'
   'cmd-alt-b':       'theos-manager:build'
   'cmd-shift-k':     'theos-manager:clean'
