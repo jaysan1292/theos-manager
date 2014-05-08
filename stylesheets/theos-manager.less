@@ -41,15 +41,16 @@
 }
 
 .theos-output-view {
+	@transparent: rgba(255, 255, 255, 0);
 	overflow: scroll;
 	height: 300px;
 	margin-bottom: 0px;
-	background: @tool-panel-background-color;
+	background: @transparent;
 
 	.panel-body {
-		background: @tool-panel-background-color;
+		background: @transparent;
 		pre {
-			background: @tool-panel-background-color;
+			background: @transparent;
 			color: @text-color;
 		}
 		.stdout {
