@@ -5,6 +5,7 @@ class HeaderView extends View
 	@content: ->
 		@div class: 'panel-heading padded heading theos-header-view', =>
 			@span class: 'heading-title',  outlet: 'title'
+			@code class: 'heading-command', outlet: 'command'
 			@span class: 'heading-status', outlet: 'status'
 			@span
 				class:  'heading-close icon-remove-close pull-right'

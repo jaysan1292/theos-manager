@@ -40,6 +40,7 @@ class TheosOutputView extends View
 		@stop()
 
 		@headerView.title.text title
+		@headerView.title.command ''
 		@headerView.setStatus 'start'
 
 		@output.empty()
@@ -55,10 +56,11 @@ class TheosOutputView extends View
 	close: ->
 		@detach() if @hasParent()
 
-	run_command: (cmd) ->
+	run_command: (cmd, statusWindowTitle) ->
 		console.log cmd
-
 		@start()
+		@headerView.title.text statusWindowTitle
+		@headerView.command.text cmd
 
 		cmd = cmd.split(' ')
 
@@ -124,18 +126,14 @@ class TheosOutputView extends View
 	# Theos Manager Actions
 	build: ->
 		save_all()
-		@run_command 'make -j -e DEBUG=1'
-		@headerView.title.text "Build"
+		@run_command 'make -j -e DEBUG=1', 'Build'
 
 	run: ->
 		save_all()
-		@run_command 'make -j -e DEBUG=1 package install'
-		@headerView.title.text "Run"
+		@run_command 'make -j -e DEBUG=1 package install', 'Run'
 
 	run_latest: ->
-		@run_command 'make -j -e DEBUG=1 install'
-		@headerVIew.title.text "Run Latest"
+		@run_command 'make -j -e DEBUG=1 install', 'Run Latest'
 
 	clean: ->
-		@run_command 'make clean'
-		@headerView.title.text "Clean"
+		@run_command 'make clean', 'Clean'
