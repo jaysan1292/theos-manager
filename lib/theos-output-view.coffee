@@ -122,17 +122,21 @@ class TheosOutputView extends View
 
 		@script.scrollToBottom()
 
+	_base_command: ->
+		cmd = 'make -j'
+		return if atom.config.get 'theos-build-manager.useDebugFlag' then "#{cmd} -e DEBUG=1" else cmd
+
 	# Theos Manager Actions
 	build: ->
 		save_all()
-		@run_command 'make -j -e DEBUG=1', 'Build'
+		@run_command @_base_command(), 'Build'
 
 	run: ->
 		save_all()
-		@run_command 'make -j -e DEBUG=1 package install', 'Run'
+		@run_command "#{@_base_command()} package install", 'Run'
 
 	run_latest: ->
-		@run_command 'make -j -e DEBUG=1 install', 'Run Latest'
+		@run_command "#{@_base_command()} install", 'Run Latest'
 
 	clean: ->
 		@run_command 'make clean', 'Clean'

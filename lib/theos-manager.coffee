@@ -7,6 +7,7 @@ module.exports =
 		theosRootPath: '/opt/theos'
 		theosDeviceIp: ''
 		theosDevicePort: 22
+		useDebugFlag: true
 
 	activate: (state) ->
 		@outputView = new TheosOutputView state.outputViewState
