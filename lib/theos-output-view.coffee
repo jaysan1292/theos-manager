@@ -112,7 +112,6 @@ class TheosOutputView extends View
 			@headerView.setStatus 'kill'
 			@bufferedProcess.kill()
 
-	# TODO: Automatically scroll output window
 	display: (css, line) ->
 		line = _.escape(line)
 		line = @ansiFilter.toHtml(line)
