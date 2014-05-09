@@ -139,4 +139,4 @@ class TheosOutputView extends View
 		@run_command "#{@_base_command()} install", 'Run Latest'
 
 	clean: ->
-		@run_command 'make clean', 'Clean'
+		@run_command 'make clean', 'Clean', false
