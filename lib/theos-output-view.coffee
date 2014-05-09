@@ -68,8 +68,8 @@ class TheosOutputView extends View
 		args    = cmd
 
 		# Set up Theos variables
-		theos             = atom.config.get('theos-build-manager.theosRootPath')   or atom.config.getDefault 'theos-build-manager.theosRootPath'
-		theos_device_port = atom.config.get('theos-build-manager.theosDevicePort') or atom.config.getDefault 'theos-build-manager.theosDevicePort'
+		theos             = atom.config.get('theos-build-manager.theosRootPath')
+		theos_device_port = atom.config.get('theos-build-manager.theosDevicePort')
 		theos_device_ip   = atom.config.get('theos-build-manager.theosDeviceIp')?.trim()
 
 		# Don't run anything if the user hasn't set up THEOS_DEVICE_IP
