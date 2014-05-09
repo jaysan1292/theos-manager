@@ -56,7 +56,7 @@ class TheosOutputView extends View
 	close: ->
 		@detach() if @hasParent()
 
-	run_command: (cmd, statusWindowTitle) ->
+	run_command: (cmd, statusWindowTitle, shouldCheckDeviceIp=true) ->
 		console.log cmd
 		@start()
 		@headerView.title.text statusWindowTitle
@@ -73,7 +73,7 @@ class TheosOutputView extends View
 		theos_device_ip   = atom.config.get('theos-build-manager.theosDeviceIp')?.trim()
 
 		# Don't run anything if the user hasn't set up THEOS_DEVICE_IP
-		if not theos_device_ip?.length
+		if shouldCheckDeviceIp and not theos_device_ip?.length
 			atom.beep()
 			@output.append $$ ->
 				@h1 'Setup required'
@@ -129,7 +129,7 @@ class TheosOutputView extends View
 	# Theos Manager Actions
 	build: ->
 		save_all()
-		@run_command @_base_command(), 'Build'
+		@run_command @_base_command(), 'Build', false
 
 	run: ->
 		save_all()
