@@ -11,5 +11,5 @@
   'cmd-alt-shift-b': 'theos-manager:run'
   'cmd-alt-c':       'theos-manager:cancel'
   'cmd-alt-b':       'theos-manager:build'
-  'cmd-shift-k':     'theos-manager:clean'
+  'cmd-alt-k':       'theos-manager:clean'
   'cmd-alt-x':       'theos-manager:close-view'
