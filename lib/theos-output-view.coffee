@@ -85,7 +85,7 @@ class TheosOutputView extends View
 		options = {
 			cwd: atom.project.path
 			env: {
-				PATH              : theos+'/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin'
+				PATH              : "#{theos}/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 				THEOS             : theos
 				THEOS_DEVICE_IP   : theos_device_ip
 				THEOS_DEVICE_PORT : theos_device_port
